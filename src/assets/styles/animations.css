@@ -1,0 +1,36 @@
+/* ============================================
+ * 梦天数据大屏 — 航天深空动画
+ * ============================================ */
+
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(30px); } to { opacity: 1; transform: translateY(0); }
+}
+@keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
+@keyframes slideInLeft {
+  from { opacity: 0; transform: translateX(-40px); } to { opacity: 1; transform: translateX(0); }
+}
+@keyframes slideInRight {
+  from { opacity: 0; transform: translateX(40px); } to { opacity: 1; transform: translateX(0); }
+}
+@keyframes capsuleBreathe {
+  0%, 100% { box-shadow: 0 0 16px rgba(0,229,238,0.14); }
+  50%      { box-shadow: 0 0 26px rgba(0,229,238,0.22); }
+}
+@keyframes scanLine {
+  0% { background-position: 0% 0%; } 100% { background-position: 200% 0%; }
+}
+/* 数据流：无缝循环，两份内容衔接滚动 */
+@keyframes marqueeFlow {
+  0%   { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+.anim-fade-in-up { animation: fadeInUp 0.6s ease-out forwards; }
+.anim-fade-in { animation: fadeIn 0.5s ease-out forwards; }
+.anim-slide-in-left { animation: slideInLeft 0.6s ease-out forwards; }
+.anim-slide-in-right { animation: slideInRight 0.6s ease-out forwards; }
+.anim-init { opacity: 0; }
+
+.delay-100 { animation-delay: 0.1s; } .delay-200 { animation-delay: 0.2s; }
+.delay-300 { animation-delay: 0.3s; } .delay-400 { animation-delay: 0.4s; }
+.delay-500 { animation-delay: 0.5s; }

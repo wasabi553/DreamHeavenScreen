@@ -1,92 +1,123 @@
-# 梦天数据大屏 · DreamHeavenScreen
-
 <p align="center">
-  <img src="https://img.shields.io/badge/license-MIT-blue.svg" alt="License">
-  <img src="https://img.shields.io/badge/version-0.1.0-brightgreen.svg" alt="Version">
+  <img src="https://img.shields.io/badge/Vue-3.5-4FC08D?logo=vuedotjs" />
+  <img src="https://img.shields.io/badge/TypeScript-5.6-3178C6?logo=typescript" />
+  <img src="https://img.shields.io/badge/Vite-6.0-646CFF?logo=vite" />
+  <img src="https://img.shields.io/badge/ECharts-5.5-AA344D?logo=apacheecharts" />
+  <img src="https://img.shields.io/badge/Pinia-2.2-F7D336" />
+  <img src="https://img.shields.io/badge/UnoCSS-0.65-666" />
 </p>
 
-## 📖 项目简介
-
-**梦天数据大屏（DreamHeavenScreen）** 是一个面向数据可视化爱好者和前端开发者的开源项目，旨在帮助大家**从 0 到 1 学习如何自己动手制作一个炫酷的数据可视化大屏**。
-
-无论你是刚开始接触数据可视化的新手，还是希望提升大屏开发能力的进阶开发者，这个项目都会为你提供清晰的学习路径和实战代码。
-
-## ✨ 特性规划
-
-- 🎨 **炫酷的视觉风格** — 霓虹 / 科技蓝 / 暗黑主题等多种风格
-- 📊 **丰富的图表组件** — 折线图、柱状图、饼图、地图、雷达图等
-- 📐 **灵活的布局系统** — 适配 1920×1080 标准大屏分辨率
-- 🔧 **从 0 到 1 教程** — 每一步都有详细的代码注释和说明文档
-- 🧩 **模块化设计** — 组件解耦，方便学习和复用
-- 📱 **响应式适配** — 支持多种屏幕尺寸
-
-## 🚀 快速开始
-
-> 项目正在持续建设中，敬请期待！
-
-```bash
-# 克隆项目
-git clone git@github.com:wasabi553/DreamHeavenScreen.git
-
-# 进入目录
-cd DreamHeavenScreen
-
-# 启动开发服务器（待实现）
-# npm run dev
-```
-
-## 📚 学习路线
-
-1. **基础入门** — 了解数据大屏的基本概念和设计原则
-2. **布局搭建** — 学习大屏整体布局和网格系统
-3. **图表组件** — 从简单图表开始，逐步实现各类可视化组件
-4. **数据接入** — 学习动态数据源、API 对接和 WebSocket 实时推送
-5. **动效与交互** — 添加动画效果和用户交互
-6. **性能优化** — 大数据量下的渲染优化策略
-7. **部署上线** — 将大屏项目部署到服务器
-
-## 🛠️ 技术栈（规划）
-
-- **前端框架**：Vue 3 / React（待定）
-- **可视化库**：ECharts / Three.js
-- **构建工具**：Vite
-- **样式方案**：CSS3 / Less / Tailwind CSS
-
-## 📁 项目结构（规划）
-
-```
-DreamHeavenScreen/
-├── public/          # 静态资源
-├── src/             # 源代码
-│   ├── components/  # 可视化组件
-│   ├── layouts/     # 布局组件
-│   ├── utils/       # 工具函数
-│   └── views/       # 页面视图
-├── docs/            # 教程文档
-├── examples/        # 示例代码
-└── README.md
-```
-
-## 🤝 贡献指南
-
-我们非常欢迎社区贡献！无论你是修复了一个 Bug、添加了新的图表组件，还是完善了文档，都是对项目的重要贡献。
-
-1. Fork 本仓库
-2. 创建你的功能分支 (`git checkout -b feature/AmazingFeature`)
-3. 提交你的更改 (`git commit -m 'Add some AmazingFeature'`)
-4. 推送到分支 (`git push origin feature/AmazingFeature`)
-5. 打开一个 Pull Request
-
-## 📄 开源协议
-
-本项目基于 [MIT License](LICENSE) 开源。
-
-## 🌟 致谢
-
-感谢每一位关注和支持本项目的朋友，让我们一起打造一个优秀的可视化大屏学习平台！
+<h1 align="center">🌌 梦天数据大屏</h1>
+<p align="center"><strong>DreamHeavenScreen</strong> — 航天深空风企业数据监控中心</p>
 
 ---
 
-<p align="center">
-  <sub>Built with ❤️ by the DreamHeavenScreen Team</sub>
-</p>
+![screenshot](docs/screenshot.png)
+
+---
+
+## ✨ 特性
+
+- 🎨 **航天深空视觉** — 深空墨蓝底色 + 航天青发光 + 星云紫/星际橙辅色
+- 📊 **6 大图表模块** — 折线趋势、柱状品类、环形地区、星球热力、店铺排行、进度仪表盘
+- ⚡ **实时数据刷新** — 每 5 秒自动增量更新，数字滚动动画
+- 🌌 **星空粒子背景** — Canvas 2D 星点缓慢流动 + 星轨弧线
+- 🧩 **适配器架构** — Mock / API 一键切换，修改 `.env` 即可
+- 🧪 **完善测试** — Vitest 单元 + 组件测试，TypeScript 严格模式
+
+## 🚀 快速开始
+
+```bash
+# 安装依赖
+npm install
+
+# 启动开发服务器
+npm run dev
+
+# 浏览器打开 http://localhost:5173
+```
+
+## 🛠 技术栈
+
+| 类别 | 选型 | 版本 |
+|------|------|------|
+| 框架 | Vue 3 Composition API | ^3.5 |
+| 语言 | TypeScript 严格模式 | ~5.6 |
+| 构建 | Vite | ^6.0 |
+| 图表 | ECharts 5 按需引入 | ^5.5 |
+| 状态 | Pinia | ^2.2 |
+| CSS | UnoCSS 原子化 | ^0.65 |
+| Mock | MSW + 直接适配器 | ^2.6 |
+| 测试 | Vitest + Playwright | ^2.1 / ^1.48 |
+| 质量 | ESLint + Prettier + Husky + Commitlint | |
+
+## 📂 目录结构
+
+```
+src/
+├── adapters/          # 数据适配器 (Mock / API)
+├── composables/       # 业务逻辑 (useClock/useCharts/useDashboard...)
+├── stores/            # Pinia 状态管理
+├── mocks/             # Mock 数据
+├── components/
+│   ├── layout/        # DashboardLayout / PanelContainer
+│   ├── header/        # GlobalHeader (Logo + 时钟 + 全局KPI)
+│   ├── kpi/           # KPICard / KPIContrastCard / KPIGauge
+│   ├── charts/        # BarChart / LineChart / PieChart / MapChart
+│   ├── ranking/       # RankList (Top10 排行)
+│   ├── realtime/      # RealtimeTicker (深空数据流)
+│   ├── particles/     # ParticleBackground (星空粒子)
+│   └── common/        # CountUpNumber / TrendArrow
+├── utils/             # Logger / ErrorHandler / Format / ECharts主题
+└── __tests__/         # 单元测试 + 组件测试 + E2E
+```
+
+## 📸 自动截图
+
+```bash
+# 1. 先启动开发服务器
+npm run dev
+
+# 2. 另开终端执行截图
+npm run screenshot
+```
+
+截图保存至 `docs/screenshot.png`。
+
+## 🔄 数据源切换
+
+```env
+# .env.development — Mock 模式（默认）
+VITE_DATA_SOURCE=mock
+
+# .env.production — API 模式
+VITE_DATA_SOURCE=api
+```
+
+切换后无需改动任何业务代码，适配器工厂自动选择对应实现。
+
+## 🧪 测试
+
+```bash
+npm run test          # 运行全部单元 + 组件测试
+npm run test:e2e      # Playwright E2E 测试
+npm run typecheck     # TypeScript 类型检查
+npm run lint          # ESLint 检查并修复
+```
+
+## 📋 页面模块
+
+| 区域 | 模块 | 说明 |
+|------|------|------|
+| 顶部 | 标题栏 + 实时时钟 + 3 个全局 KPI | 总销售额 / 总订单量 / 活跃用户 |
+| 左侧 | 品类销售 TOP 5 | 横向柱状图，渐变色柱 |
+| 左侧 | 地区销售分布 | 7 大区环形饼图，右侧图例 |
+| 中间 | 近 30 天销售趋势 | 折线图，航天青→星云紫渐变面积 |
+| 中间 | 全国销售热力分布 | 散点气泡图，星球天体质感 |
+| 右侧 | 店铺销售排行 TOP 10 | 前三名金银铜高亮 |
+| 右侧 | 月度/季度目标仪表盘 | 双环形进度，金额外置 |
+| 底部 | 深空数据流 | 实时通知无缝滚动 |
+
+## 📄 License
+
+MIT © [wasabi553](https://github.com/wasabi553)

@@ -20,12 +20,9 @@ out/
 Thumbs.db
 Desktop.ini
 
-# Environment
-.env
+# Environment (keep .env and .env.development — they contain non-sensitive project config)
 .env.local
 .env.*.local
-
-# Logs
 *.log
 npm-debug.log*
 yarn-debug.log*
@@ -42,3 +39,17 @@ coverage/
 # Temporary
 tmp/
 temp/
+
+# Test
+coverage/
+test-results/
+playwright-report/
+
+# MSW
+public/mockServiceWorker.js
+
+# Husky
+.husky/_/
+
+# Logs
+.vite/
