@@ -26,7 +26,7 @@
 
 ```bash
 # 克隆项目
-git clone https://github.com/YOUR_USERNAME/DreamHeavenScreen.git
+git clone git@github.com:wasabi553/DreamHeavenScreen.git
 
 # 进入目录
 cd DreamHeavenScreen
